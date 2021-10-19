@@ -28,7 +28,7 @@ export default {
         // 新增
         service
           .request({
-            url: "http://106.75.45.108:1337/posts",
+            url: "/api/posts",
             method: "POST",
             data: { ...this.blog }
           })
@@ -40,7 +40,7 @@ export default {
         // 编辑
         service
           .request({
-            url: "http://106.75.45.108:1337/posts/" + this.id,
+            url: "/api/posts/" + this.id,
             method: "PUT",
             data: { ...this.blog }
           })

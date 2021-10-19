@@ -46,7 +46,7 @@ export default {
       console.log("request");
       service
         .request({
-          url: `http://106.75.45.108:1337/posts?title_contains=` + this.searchText
+          url: `/api/posts?title_contains=` + this.searchText
         })
         .then(res => {
           this.posts = res;
@@ -54,7 +54,7 @@ export default {
     },
     deletePost(id){
       service.request({
-          url: "http://106.75.45.108:1337/posts/" + id,
+          url: "/api/posts/" + id,
           method: "DELETE",
         }).then(res=>{
           alert("删除成功")
