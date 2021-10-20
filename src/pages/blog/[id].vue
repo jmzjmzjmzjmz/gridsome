@@ -57,7 +57,7 @@ export default {
       // 获取详情
       service
         .request({
-          url: "http://106.75.45.108:1337/posts/" + this.id
+          url: "/api/posts/" + this.id
         })
         .then(res => {
           this.blog = res;
