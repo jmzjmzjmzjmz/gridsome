@@ -21,7 +21,7 @@ function errorLog(error) {
 // 创建一个 axios 实例
 const service = axios.create({
     // baseURL: "/" + process.env.VUE_APP_API,
-    baseURL: "https://www.meitr.com/pcapi/",
+    baseURL: "",
     validateStatus: function (status) {
         return [200, 400, 500].includes(status); // 默认的
     },
